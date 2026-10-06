@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container, .auth-card {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #334155;
+    text-align: center;
+}
+
+h2, h1 {
+    margin-bottom: 24px;
+    color: #f8fafc;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #0f172a;
+    border: 1px solid #475569;
+    border-radius: 6px;
+    color: #f8fafc;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3b82f6; 
+}
+
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 15px; 
+}
+
+button:hover, .btn:hover {
+    background-color: #1d4ed8;
+}
+
+p {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+a {
+    color: #60a5fa;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 1100px;
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header h2 {
+    margin-bottom: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.notes-section {
+    flex: 2;
+}
+
+.form-section {
+    flex: 1;
+    min-width: 320px;
+}
+
+.note-form-box {
+    background-color: #f1f5f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.note-form-box h3, .note-form-box label {
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.note-form-box input[type="text"],
+.note-form-box textarea {
+    background-color: #ffffff;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+    margin-top: 5px;
+}
+
+.note-form-box button {
+    background-color: #10b981;
+}
+
+.note-form-box button:hover {
+    background-color: #059669;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.note-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-message {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.btn-message:hover {
+    background-color: #1d4ed8;
+}
